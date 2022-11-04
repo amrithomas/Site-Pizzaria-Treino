@@ -1,0 +1,39 @@
+.cabecalho  {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    background-color: wheat;
+}
+
+.menu-nav {
+    display: flex;
+    
+}
+
+.menu-nav a {
+    text-decoration: none;
+    color: black;
+
+    margin-left: 15px;
+}
+
+.secao1 {
+    background-color: rgb(255, 255, 255);  
+}
+
+.div1 {
+    background-color: rgb(255, 255, 255);
+}
+
+
+.secao2 {
+    background-color: rgb(255, 255, 255);  
+}
+
+
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+
+}
