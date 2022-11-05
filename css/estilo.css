@@ -1,8 +1,9 @@
-.cabecalho  {
+
+.cabecalho {
     display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-    background-color: wheat;
+
+    justify-content: space-evenly;
+    background-color: 	#25d893;
 }
 
 .menu-nav {
@@ -10,30 +11,25 @@
     
 }
 
-.menu-nav a {
+.menu-nav li {
+    text-align: center; 
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.menu-item {
     text-decoration: none;
-    color: black;
-
-    margin-left: 15px;
+    color: white;
+    font-size: 20px;
 }
-
-.secao1 {
-    background-color: rgb(255, 255, 255);  
-}
-
-.div1 {
-    background-color: rgb(255, 255, 255);
-}
-
-
-.secao2 {
-    background-color: rgb(255, 255, 255);  
-}
-
-
 
 .rodape {
     display: flex;
     justify-content: space-around;
+} 
 
+
+
+.icones {
+    display: flex;
 }
