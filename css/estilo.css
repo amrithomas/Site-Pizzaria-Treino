@@ -1,35 +1,53 @@
-
 .cabecalho {
+    background-color: red;
+}
+
+header {
+    background-color:  rgb(255, 0, 0);
     display: flex;
-
-    justify-content: space-evenly;
-    background-color: 	#25d893;
-}
-
-.menu-nav {
-    display: flex;
-    
-}
-
-.menu-nav li {
-    text-align: center; 
-    margin-left: 20px;
-    margin-top: 20px;
-}
-
-.menu-item {
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
-
-.rodape {
-    display: flex;
+    align-items: center;
     justify-content: space-around;
-} 
+}
 
-
-
-.icones {
+.lista__menu {
     display: flex;
+}
+
+.lista__item {
+    margin-left: 1em;
+}
+
+.btn__item {
+    border: none;
+}
+
+.link__item {
+    text-decoration: none;
+    color: black;
+    border: none;
+}
+
+#secao {
+    text-align: center;
+    margin-top: 4em;
+}
+
+#avaliacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3em;
+}
+
+#cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.titulo_secao {
+    margin-top: 1em;
 }

@@ -4,161 +4,211 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Buffet (sem nome ainda)</title>
+        <title>Pizzaria Abreu</title>
 
-        <link rel="stylesheet" href="/Buffet-Site-Treino/css/reset.css">
+        <link rel="shortcut icon" href="/img/favicon-16x16.png" type="image/x-icon">
+        <link rel="stylesheet" href="/css/reset.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-        <link rel="stylesheet" href="/Buffet-Site-Treino/css/estilo.css">
+        <link rel="stylesheet" href="/css/estilo.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row cabecalho--linha">
-                <header class="cabecalho">
-                    <h2>Insira a imagem aqui</h1>
+        
+        <div class="container-fluid cabecalho">
+            <header>
+                <img src="" alt="logo-pizzaria-abreu">
+                <nav class="cabecalho__menu">
+                    <ul class="lista__menu">
+                        <li class="lista__item">
+                            <button class="btn__lista">
+                                <a href="/index.html" class="link__item">Home</a>
+                            </button>
+                        </li>
+                        <li class="lista__item">
+                            <button class="btn__lista">
+                                <a href="/sobre-nos.html" class="link__item">Sobre nos</a>
+                            </button>
+                        </li>
+                        <li class="lista__item">
+                            <button class="btn__lista">
+                                <a href="#" class="link__item">Contato</a>
+                            </button>
+                        </li>                  
+                    </ul>
+                </nav>
+            </header>
+        </div>
 
-                    <nav class="menu">
-                        <ul class="menu-nav">
-                            <li><a href="/index.html" class="menu-item"><p>Home</p></a></li>
-                            <li><a href="/buffet.html" class="menu-item"><p>Buffet</p></a></li>
-                            <li><a href="/agenda.html" class="menu-item"><p>Agenda</p></a></li>
-                        </ul>      
-                    </nav>
-                </header>
-            </div> 
-            <main>
-              
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="container">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="" class="d-block w-100" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="" class="d-block w-100" alt="">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Voltar</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Proximo</span>
-                    </button>
                   </div>
+                  
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="carousel-item">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
-                <section class="secao-buffet">
-                    <h2>Buffet (sem nome ainda)</h2>
-                    <hr>
-                    <div>
-                        <div class="card">
-                            <img src="" alt="">
-                            <p>motivo 1</p>
+        <section id="secao">
+            <div class="container">
+                <h2>NOSSOS CLIENTES</h2>
+                <section id="avaliacoes" class="row">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Fernando Madeira</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">bla bla bla bla</p>
                         </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>motivo 2</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p> motivo 3</p>
+                    </div>
+    
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Amri Righetti</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">bla bla bla bla</p>
                         </div>
                     </div>
                     
-                    <div>
-                        <div>
-                            <img src="" alt="">
-                            <p>motivo 4</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>motivo 5</p>
-                        </div>
-                        <div>
-                            <img src="" alt="">
-                            <p>motivo 6</p>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title">Isadora Matias</h5>
+                          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                          <p class="card-text">bla bla bla bla</p>
                         </div>
                     </div>
                 </section>
+            </div>
+        </section>
 
-                <div class="div1">
-                    <h1>CONTER VARIAS IMAGENS DO SUPOSTO BUFFET</h1>
-                </div>
-
-                <section class="secao-depoimento">
-                    <h2>Depoimentos</h2>
-                    <hr>
-                    <div>
-                        <div class="card-depoimento">
-                            <img src="" alt="">
-                            <div class="card-depoimento__descricao">
-                                <p>depoimento 1</p>
-                                <p>Fernando Madeira</p>
-                            </div>
-                        </div>
-                        <div class="card-depoimento">
-                            <img src="" alt="">
-                            <div class="card-depoimento__descricao">
-                                <p>depoimento 2</p>
-                                <p>Isadora Matias</p>
-                            </div>
-                        </div>
-                        <div class="card-depoimento"> 
-                            <img src="" alt="">
-                            <div class="card-depoimento__descricao">
-                                <p>depoimento 3</p>
-                                <p>Juliana Abreu</p>
-                            </div>
+        <section id="secao">
+            <div class="container">
+                <h2>CARDAPIO</h2>
+                <section id="cardapio" class="row">
+                    <h4 class="titulo_secao">Pizzas da Casa</h4>
+                    <a href="">Ver tudo...</a>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
-                </section>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
 
-                <div class="">
-                    <h1>IMAGENS DO BUFFET SEM NOME</h1>
-                </div>
+                </section>
                 
-                <section class="secao-sobre_nos">
-                    <h2>Sobre nós</h2>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet. Et nostrum quia aut placeat saepe ut nihil aspernatur. Aut amet facilis sed minus porro sed alias aspernatur aut sequi harum. </p><p>Sit quisquam nostrum nam ipsam praesentium aut autem omnis ut sapiente aliquam ut laborum minus est nisi nostrum qui neque illum. Et consectetur rerum aut earum cupiditate a voluptatibus quaerat qui reprehenderit necessitatibus est voluptas veniam ut veritatis animi et earum neque. Non mollitia voluptas et eligendi officia vel adipisci dignissimos ut fugit eligendi non fugiat galisum non consequatur accusantium. </p>
-                    <button>
-                        <a href="/Buffet-Site-Treino/sobre-nos.html"><p>Saiba Mais</p></a>
-                    </button>
-                </section>
-            </main>
-
-            <footer class="rodape">
-                <div class="rodape-horario">
-                    <h4>HORARIO DE FUNCIONAMENTO</h1>
-                    <p>Segunda à Sexta: 10:00 às 22:00</p>
-                    <p>Sábado: 10:00 às 22:00</p>
-                    <p>Domingo: 11:00 às 20:00</p>
-                </div>
-                <div class="rodape-contato">
-                    <h4>Fale conosco</h4>
-                    <div class="icones">
-                        <a href="">
-                            <img src="/Buffet-Site-Treino/img/facebook.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="/Buffet-Site-Treino/img/instagram.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="/Buffet-Site-Treino/img/whatsapp.svg" alt="">
-                        </a>
-                        <a href="">
-                            <img src="/Buffet-Site-Treino/img/telephone-fill.svg" alt="">
-                        </a>
+                <section id="cardapio" class="row">
+                    <h4 class="titulo_secao">Não Pode Faltar</h4>
+                    <a href="">Ver tudo...</a>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
                     </div>
-                </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section id="cardapio" class="row">
+                    <h4 class="titulo_secao">Mais Pedidas</h4>
+                    <a href="">Ver tudo...</a>
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card" style="width: 18rem;">
+                        <img src="..." class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <section id="secao">
+            <div class="container">
+                <h2>SOBRE NÓS</h2>
+            </div>
+        </section>
+
+        <div class="container-fluid rodape">
+            <footer>
+                
             </footer>
-        </div> 
+        </div>
     </body>
 </html>
