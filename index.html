@@ -11,6 +11,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/estilo.css">
+        <link rel="stylesheet" href="/css/animacao.css">
     </head>
     <body>
         
@@ -92,7 +93,7 @@
                 <hr>
                 <section id="avaliacoes" class="row">
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body fadeInLeft">
                             <img src="/img/fernando-perfil.png" alt="" class="img-card">
                             <h5 class="card-title">Fernando Madeira</h5>           
                             <span class="fa fa-star checked"></span>
@@ -105,7 +106,7 @@
                     </div>
     
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body fadeInDown">
                             <img src="/img/amri-perfil.png" alt="" class="img-card">
                             <h5 class="card-title">Amri Righetti</h5>
                             <span class="fa fa-star checked"></span>
@@ -118,7 +119,7 @@
                     </div>
                     
                     <div class="card" style="width: 18rem;">
-                        <div class="card-body">
+                        <div class="card-body fadeInRight">
                             <img src="/img/isadora-perfil.jpg" alt="" class="img-card">
                             <h5 class="card-title">Ana Santos</h5>
                             <span class="fa fa-star checked"></span>
@@ -139,7 +140,7 @@
                 <hr>
                 <section id="cardapio" class="row">
                     <h4 class="titulo_secao">Pizzas da Casa</h4>
-                        <div class="card" id="pizza">
+                        <div class="card fadeInLeft" id="pizza">
                             <img src="" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Chef I</p>
@@ -147,62 +148,46 @@
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
+                        <div class="card fadeInRight" id="pizza" >
                             <img src="" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Chef II</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
 </p>
                             </div>
-                        </div>
-                        <div class="card" id="pizza">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Chef III</p>
-                                <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
-</p>
-                            </div>
-                        </div>
-                        <div class="card" id="pizza">
-                            <img src="" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Chef IV</p>
-                                <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
-</p>
-                            </div>
-                        </div>       
+                        </div>      
                 </section>
                                
                 <section id="cardapio" class="row">
                     <h4 class="titulo_secao">Salgadas</h4>          
-                        <div class="card" id="pizza">
-                            <img src="/img/pizza-baiana.png" alt="" class="card-img-top">
+                        <div class="card fadeInLeft" id="pizza">
+                            <img src="/img/pizza-bauru.jpeg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Baiana</p>
+                                <p class="card-text" id="nome-pizza">Bauru</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
-                            <img src="/img/pizza-portuguesa.png" alt="" class="card-img-top">
-                            <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Portuguesa</p>
-                                <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
-</p>
-                            </div>
-                        </div>
-                        <div class="card" id="pizza">
-                            <img src="/img/pizza-calabresa.png" alt="" class="card-img-top">
+                        <div class="card fadeInDown" id="pizza">
+                            <img src="/img/pizza-calabresa.jpeg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Calabresa</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
-                            <img src="/img/pizza-quatro-queijos.png" alt="" class="card-img-top">
+                        <div class="card fadeInDown" id="pizza">
+                            <img src="/img/pizza-frango.jpeg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Quatro Queijos</p>
+                                <p class="card-text" id="nome-pizza">Frango com Catupiry</p>
+                                <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
+</p>
+                            </div>
+                        </div>
+                        <div class="card fadeInRight" id="pizza">
+                            <img src="/img/pizza-marguerite.jpeg" alt="" class="card-img-top">
+                            <div class="card-body">
+                                <p class="card-text" id="nome-pizza">Marguerite</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
 </p>
                             </div>
@@ -211,7 +196,7 @@
                 
                 <section id="cardapio" class="row">
                     <h4 class="titulo_secao">Doces</h4>         
-                        <div class="card" id="pizza">
+                        <div class="card fadeInLeft" id="pizza">
                             <img src="/img/pizza-brigadeiro.png" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Brigadeiro</p>
@@ -219,7 +204,7 @@
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
+                        <div class="card fadeInUp" id="pizza">
                             <img src="" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Banana com Canela</p>
@@ -227,7 +212,7 @@
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
+                        <div class="card fadeInUp" id="pizza">
                             <img src="" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Light</p>
@@ -235,8 +220,8 @@
 </p>
                             </div>
                         </div>
-                        <div class="card" id="pizza">
-                            <img src="" alt="" class="card-img-top">
+                        <div class="card fadeInRight" id="pizza">
+                            <img src="/img/pizza-morango-chocolate.jpeg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Morango com Chocolate</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
@@ -248,24 +233,13 @@
             </div>
         </section>
 
-        <section class="secao" id="sobre-nos">
-            <div class="container-fluid">
+        <section class="secao" id="sobre-nos">    
+            <div>
                 <h2 id="titulo-sobre-nos">SOBRE NÓS...</h2>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+                <p id="texto-sobre-nos"> Você está na ABREU PIZZARIA, o melhor lugar para encontrar pizzas. Você sabia que nós trabalhamos apenas com os fornecedores mais confiáveis do mercado?<br>Pois é! Isso significa que todos os produtos que você encontrar no nosso site certamente serão da mais alta qualidade. Vá em frente!</p>
+                <p id="texto-sobre-nos" style="padding-bottom: 6em;">Aqui, nós acreditamos em um serviço de atendimento aos clientes de altíssima qualidade – mas também somos da opinião de que todos os nossos clientes merecem vivenciar uma experiência de compra inesquecível, e é por isso que tentamos proporcionar produtos excelentes a um preço acessível.</p>       
             </div>
+
         </section>
         
         <section class="secao">
@@ -281,4 +255,5 @@
         </div>
     </body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="/js/main.js"></script>
 </html>
