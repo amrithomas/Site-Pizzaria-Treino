@@ -1,12 +1,47 @@
-.cabecalho {
-    background-color: red;
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+.checked {
+    color: orange;
+    margin: 10px 0 10px 0;
+}
+
+hr {
+    border: 3px solid;
+    border-radius: 3px;
+    color: rgb(107, 107, 107);
+    width: 30%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 700;
+    color: red;
 }
 
 header {
-    background-color:  rgb(255, 0, 0);
+
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.rodape {
+    background-image: url(/img/img-rodape.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    filter: grayscale(1);
+    
+}
+
+#cabecalho {
+    background-image: url(/img/slide2.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    
+    height: 600px;
 }
 
 .lista__menu {
@@ -27,14 +62,49 @@ header {
     border: none;
 }
 
-#secao {
+.card {
+    width: 250px;
     text-align: center;
-    margin-top: 4em;
+    align-items: center;
+    transition: 1s;
 }
+
+.img-card {
+    height: 130px;
+    width: 130px;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+}
+
+.card-title {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.card-text {
+    text-align: center;
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#pizza:hover {
+    transform: scale(1.2);
+    transition: 1s;
+    border-color: red;
+}
+
+#nome-pizza {
+    font-size: 22px;
+}
+
 
 #avaliacoes {
     display: flex;
-    align-items: center;
     justify-content: space-around;
     text-align: center;
     margin-top: 3em;
@@ -48,6 +118,49 @@ header {
     margin-top: 3em;
 }
 
+#titulo-sobre-nos {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 800;
+    font-size: 64px;
+
+    color: rgb(0, 0, 0);
+    padding-top: 1em;
+    padding-left: 2em;
+    text-align: left;
+}
+
+#sobre-nos {
+    background-image: url(/img/fundo-sobre-nos3.jpg);
+}
+
+.secao {
+    text-align: center;
+    margin-top: 4em;
+}
+
+.link-pagina {
+    padding-top: 20px;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 22px;
+    font-weight: 500;
+
+    transition: 1s;
+}
+
+.link-pagina:hover {
+    color: red;
+}
+
 .titulo_secao {
     margin-top: 1em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 24px;
+    font-weight: 600;
 }
