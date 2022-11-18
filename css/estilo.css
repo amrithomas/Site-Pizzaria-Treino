@@ -40,13 +40,13 @@ footer {
 }
 
 .rodape {
-    background-image: url(/img/img-rodape.webp);
+    background-image: url(/img/img-rodape.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
     filter: grayscale(1);
     padding: 90px;
-    margin-top: 5em;
+
 }
 
 
@@ -172,6 +172,8 @@ footer {
     font-family: 'Oswald', 'sans-serif';
     font-size: 26px;
     margin-top: 0.5em;
+
+    
 }
 
 .coluna-servico p {
@@ -198,7 +200,7 @@ footer {
     font-family: 'Oswald', 'sans-serif';
     font-size: 24px;
     font-weight: 500;
-    margin-top: 1em;
+    margin:0;
 }
 
 .rodape-div img {
@@ -207,6 +209,18 @@ footer {
     margin-right: 6em;
     margin-top: 1em;
     filter: brightness(200%);
+}
+
+.separar2 {
+    background-image: url(/img/fundo-pizza2.jpg);
+    margin-top: 2em;
+    padding: 20px;
+}
+
+.separar {
+    background-image: url(/img/fundo-pizza2.jpg);
+    margin-bottom: 2em;
+    padding: 20px;
 }
 
 #cabecalho {
@@ -274,4 +288,10 @@ footer {
 #promocao img {
     margin-top: 1em;
     border-radius: 20px;
+}
+
+@media screen (max-width: 630px) {
+    #img-promocao {
+        display: none
+    }
 }
