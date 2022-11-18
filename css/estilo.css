@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-@import url(/css/animacao.css);
+
 
 .checked {
     color: orange;
@@ -22,31 +22,33 @@ h2 {
     font-size: 40px;
 }
 
-header {
+h5 {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
 
+header {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
 
 .rodape {
     background-image: url(/img/img-rodape.webp);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
     background-size: cover;
     filter: grayscale(1);
-    
+    padding: 90px;
+    margin-top: 5em;
 }
 
-#cabecalho {
-    background-image: url(/img/slide1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100% 100%;
-    
-    
-}
 
 .lista__menu {
     display: flex;
@@ -75,15 +77,14 @@ header {
     
 }
 
-
 .img-card {
     height: 130px;
     width: 130px;
 }
 
 .card-img-top {
-    height: 350px;
-    width: 350px;
+    height: 280px;
+    width: 280px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     
@@ -102,97 +103,13 @@ header {
     font-size: 18px;
 }
 
-#pizza {
-    width: 350px;
-    text-align: center;
-    align-items: center;
-    transition: 1s;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
- 
-
-    box-shadow: 5px 10px 8px #888888;
-}
-
-#pizza:hover {
-    transform: scale(1.2);
-    transition: 1s;
-    border-color: red;
-    box-shadow: 5px 10px 8px red;
-
-    cursor: pointer;
-}
-
-#nome-pizza {
-    font-size: 22px;
-}
-
-
-#avaliacoes {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    margin-top: 3em;
-
-    height: 30vh;
-}
-
-#cardapio {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
-    margin-top: 3em;
-    height: 55vh;
-}
-
-#sobre-nos {
-    background-image: url(/img/fundo-sobre-nos1.jpg);
-    display: flex;
-    height: 50vh;
-}
-
-#titulo-sobre-nos {
-    font-family: 'Oswald', 'sans-serif';
-    font-weight: 800;
-    font-size: 64px;
-    color: rgb(255, 255, 255);
-    
-    padding-top: 1em;
-    padding-left: 2em;
-    text-align: left;
-}
-
-#texto-sobre-nos {
-    font-family: 'Oswald', 'sans-serif';
-    font-weight: 400;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-
-    text-align: left;
-    margin-left: 3em;
-    margin-top: 2em;
-
-    width: 50%;
-}
-
-#img-sobre-nos {
-    width: 400px;
-    height: 450px;
-
-    border-radius: 20px;
-
-
-}
-
-
 .secao {
     text-align: center;
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 .link-pagina {
-    padding-top: 20px;
+    margin-top: 1em;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -212,9 +129,149 @@ header {
 
 .titulo_secao {
     margin-top: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     text-transform: uppercase;
     font-family: 'Oswald', 'sans-serif';
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 600;
+}
+
+.sobre-nos {
+    background-image: url(/img/fundo-sobre-nos-pizza.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    
+    margin-top: 8em;
+    padding: 150px;
+}
+
+.sobre-nos h2 {
+    color: white;
+    font-size: 64px;
+    text-align: left;
+}
+
+.sobre-nos p {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 500;
+    color: white;
+    font-size: 36px;
+    margin-top: 0.5em; 
+    text-align: left;
+}
+
+.pizzarias h5 {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 30px;
+    
+}
+
+.coluna-servico h4{
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 26px;
+    margin-top: 0.5em;
+}
+
+.coluna-servico p {
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 18px;
+    margin-top: 0.5em;
+}
+
+.img-servico {
+    width: 120px;
+    height: 120px;
+    margin-top: 2em;
+}
+
+.rodape-div h4{
+    color: white;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.rodape-div p {
+    color: white;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 1em;
+}
+
+.rodape-div img {
+    width: 55px;
+    height: 55px;
+    margin-right: 6em;
+    margin-top: 1em;
+    filter: brightness(200%);
+}
+
+#cabecalho {
+   background-color: red;
+}
+
+#pizza {
+    width: 280px;
+    text-align: center;
+    align-items: center;
+    transition: 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+ 
+
+    box-shadow: 5px 10px 8px #888888;
+}
+
+#pizza:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    cursor: pointer;
+}
+
+#nome-pizza {
+    font-size: 22px;
+}
+
+
+#avaliacoes {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3em;
+}
+
+#cardapio {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 3em;
+}
+
+#promocao {
+    background-image: url(/img/fundo-sobre-nos4.jpg);
+    background-repeat: repeat;
+    margin-top: 8em;
+    padding: 80px;
+}
+
+#promocao h2 {
+    font-size: 64px;
+    
+}
+
+#promocao p {
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-size: 54px;
+    margin-top: 0.5em;
+}
+
+#promocao img {
+    margin-top: 1em;
+    border-radius: 20px;
 }
