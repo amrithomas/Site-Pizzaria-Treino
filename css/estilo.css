@@ -290,8 +290,3 @@ footer {
     border-radius: 20px;
 }
 
-@media screen (max-width: 630px) {
-    #img-promocao {
-        display: none
-    }
-}
