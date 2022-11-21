@@ -247,6 +247,11 @@ li a:hover {
     filter: brightness(200%);
 }
 
+.rede-social {
+    width: 26px;
+    height: 26px;
+}
+
 .separar2 {
     background-image: url(/img/fundo-pizza2.jpg);
     margin-top: 2em;
