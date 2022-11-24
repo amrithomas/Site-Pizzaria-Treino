@@ -42,8 +42,8 @@ footer {
 
 
 .img-cabecalho {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 ul {
@@ -58,7 +58,7 @@ li {
 li a {
     color: white;
     font-family: 'Oswald', 'sans-serif';
-    font-size: 28px;
+    font-size: 32px;
     text-decoration: none;
     text-transform: uppercase;
     transition: 1s;
@@ -66,8 +66,7 @@ li a {
 
 li a:hover {
     transition: 1s;
-    color: white;
-    font-size: 30px;
+    color: red ;
 }
 
 .card {
@@ -76,7 +75,11 @@ li a:hover {
     align-items: center;
     transition: 1s;
     border: none;
-    
+}
+
+.card-pizza {
+    background-color: #FFEBCD;
+    border-radius: 20px;
 }
 
 .img-card {
@@ -215,7 +218,7 @@ li a:hover {
 }
 
 .rodape {
-    background-image: url(/img/img-rodape.webp);
+    background-image: url(/img/img-rodape.jpg);
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -227,14 +230,14 @@ li a:hover {
 .rodape-div h4{
     color: white;
     font-family: 'Oswald', 'sans-serif';
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .rodape-div p {
     color: white;
     font-family: 'Oswald', 'sans-serif';
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 500;
     margin:0;
 }
@@ -248,8 +251,8 @@ li a:hover {
 }
 
 .rede-social {
-    width: 26px;
-    height: 26px;
+    width: 18px;
+    height: 18px;
 }
 
 .separar2 {
@@ -278,6 +281,12 @@ li a:hover {
 
 #cabecalho {
     background-color: red;
+    background-image: url(/img/fundo-header.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+    padding: 60px;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
