@@ -30,42 +30,44 @@ h5 {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+
 }
 
 footer {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-}
 
-.rodape {
-    background-image: url(/img/img-rodape.webp);
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    filter: grayscale(1);
-    padding: 90px;
-    margin-top: 5em;
 }
 
 
-.lista__menu {
+.img-cabecalho {
+    width: 150px;
+    height: 150px;
+}
+
+ul {
     display: flex;
+    align-items: center;
 }
 
-.lista__item {
-    margin-left: 1em;
+li {
+    margin-left: 20px;
 }
 
-.btn__item {
-    border: none;
-}
-
-.link__item {
+li a {
+    color: white;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 28px;
     text-decoration: none;
-    color: black;
-    border: none;
+    text-transform: uppercase;
+    transition: 1s;
+}
+
+li a:hover {
+    transition: 1s;
+    color: white;
+    font-size: 30px;
 }
 
 .card {
@@ -106,6 +108,7 @@ footer {
 .secao {
     text-align: center;
     margin-top: 5em;
+
 }
 
 .link-pagina {
@@ -144,7 +147,7 @@ footer {
     background-size: cover;
     
     margin-top: 8em;
-    padding: 150px;
+    padding: 180px;
 }
 
 .sobre-nos h2 {
@@ -158,20 +161,16 @@ footer {
     font-weight: 500;
     color: white;
     font-size: 36px;
-    margin-top: 0.5em; 
+    margin-top: 2em; 
     text-align: left;
-}
-
-.pizzarias h5 {
-    font-family: 'Oswald', 'sans-serif';
-    font-size: 30px;
-    
 }
 
 .coluna-servico h4{
     font-family: 'Oswald', 'sans-serif';
     font-size: 26px;
     margin-top: 0.5em;
+
+    
 }
 
 .coluna-servico p {
@@ -186,6 +185,45 @@ footer {
     margin-top: 2em;
 }
 
+
+.localizacao {
+    margin-top: 0;
+    background-image: url(/img/fundo-localizacao.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    height: 100%;
+}
+
+.texto-pizzaria {
+    color: white;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 30px;
+}
+
+#titulo-localizacao {
+    color: white;
+    margin-top: 0;
+}
+
+.img-pizzaria {
+    border-radius: 25px;
+    width: 600px;
+}
+
+.rodape {
+    background-image: url(/img/img-rodape.webp);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    filter: grayscale(1);
+    padding: 90px;
+
+}
+
 .rodape-div h4{
     color: white;
     font-family: 'Oswald', 'sans-serif';
@@ -198,7 +236,7 @@ footer {
     font-family: 'Oswald', 'sans-serif';
     font-size: 24px;
     font-weight: 500;
-    margin-top: 1em;
+    margin:0;
 }
 
 .rodape-div img {
@@ -209,8 +247,40 @@ footer {
     filter: brightness(200%);
 }
 
+.rede-social {
+    width: 26px;
+    height: 26px;
+}
+
+.separar2 {
+    background-image: url(/img/fundo-pizza2.jpg);
+    margin-top: 2em;
+    padding: 20px;
+}
+
+.separar {
+    background-image: url(/img/fundo-pizza2.jpg);
+    margin-bottom: 2em;
+    padding: 20px;
+}
+
+.coluna-servico {
+    margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+
+#fotos-pizzaria {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 #cabecalho {
-   background-color: red;
+    background-color: red;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 #pizza {
@@ -254,16 +324,16 @@ footer {
 #promocao {
     background-image: url(/img/fundo-sobre-nos4.jpg);
     background-repeat: repeat;
-    margin-top: 8em;
+    margin-top: 0;
+    margin-bottom: 0;
     padding: 80px;
 }
 
-#promocao h2 {
-    font-size: 64px;
-    
+#titulo-promocao {
+    font-size: 64px; 
 }
 
-#promocao p {
+#texto-promocao {
     font-family: 'Oswald', 'sans-serif';
     font-weight: 500;
     color: rgb(0, 0, 0);
@@ -271,7 +341,23 @@ footer {
     margin-top: 0.5em;
 }
 
-#promocao img {
-    margin-top: 1em;
-    border-radius: 20px;
-}
+@media screen and (max-width: 610px) {
+    nav {
+        display: none;
+    }
+
+    #sobre-nos {
+        display: none;
+    }
+
+    #promocao {
+        display: none;
+    }
+
+    .localizacao {
+      display: none;
+    }
+  }
+
+
+  

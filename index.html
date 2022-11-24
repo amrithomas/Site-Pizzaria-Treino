@@ -15,24 +15,30 @@
     </head>
     <body>
         
-        <div class="container-fluid" id="cabecalho">
-            <header>
-                <img src="" alt="logo-pizzaria-abreu">
-                <nav class="cabecalho__menu">
-                    <ul class="lista__menu">
-                        <li class="lista__item">
-                            <button class="btn__lista">
-                                <a href="/index.html" class="link__item">Home</a>
-                            </button>
+        <header>
+            <div class="container-fluid" id="cabecalho">
+                <img src="/img/logo-abreu.png" alt="logo-pizzaria-abreu" class="img-cabecalho">  
+                <nav>
+                    <ul>
+                        <li>
+                             <a href="#cabecalho">Home</a>                  
                         </li>
-                        <li class="lista__item">
-                            <button class="btn__lista">
-                                <a href="/sobre-nos.html" class="link__item">Cardapio</a>
-                            </button>
-                        </li>                                                 
-                    </ul>
+                        <li>
+                            <a href="#cardapio">Cardápio</a> 
+                        </li>
+                        <li>
+                            <a href="#sobre-nos">Sobre nós</a>
+                        </li>
+                        <li>
+                            <a href="#rodape">Contato</a>
+                        </li>
+                    </ul>    
                 </nav>
-            </header>
+            </div>
+        </header>
+        
+        <div class="container-fluid separar">
+
         </div>
 
         <div class="secao">
@@ -81,6 +87,8 @@
                 </section>
             </div>
         </div>
+
+        <div class="container-fluid separar2"></div>
         
         <div class="secao">
             <div class="container-fluid">
@@ -89,14 +97,14 @@
                 <section id="cardapio" class="row">
                     <h4 class="titulo_secao">Pizzas da Casa</h4>
                         <div class="card fadeInLeft" id="pizza">
-                            <img src="" alt="" class="card-img-top">
+                            <img src="/img/pizza-chefe1.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Chef I</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
                             </div>
                         </div>
                         <div class="card fadeInRight" id="pizza" >
-                            <img src="" alt="" class="card-img-top">
+                            <img src="/img/pizza-chefe2.jpg" alt="" class="card-img-top">
                             <div class="card-body">
                                 <p class="card-text" id="nome-pizza">Chef II</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
@@ -136,45 +144,46 @@
                         </div>   
                 </section>
 
+                <div class="container-fluid separar2"></div>
+
                 <div class="secao" id="promocao">
-                    <div class="container">
+                    <div class="container-fluid">
                         <div class="row-cols-auto">
                             <div class="col">
-                                <h2>PROMOÇÕES</h2>
+                                <h2 id="titulo-promocao">PROMOÇÃO</h2>
                             </div>
                             <div class="row" id="itens-promocao">
                                 <div class="col">
-                                    <p>DE TERÇA A QUINTA GANHE UMA BORDA RECHEADA DE</p>
-                                    <p style="color: red; font-size: 58px; font-weight: bold;">GRAÇA</p>
-                                </div>
-                                <div class="col">
-                                    <img src="/img/slide2.gif" alt="">
+                                    <p id="texto-promocao">DE TERÇA Á QUINTA GANHE UMA BORDA RECHEADA!</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <div class="container-fluid separar"></div>
+                
                 
                 <section id="cardapio" class="row">
                     <h4 class="titulo_secao">Doces</h4>         
                         <div class="card fadeInLeft" id="pizza">
-                            <img src="" alt="" class="card-img-top">
+                            <img src="/img/pizza-chocolate-branco.jpg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Brigadeiro</p>
+                                <p class="card-text" id="nome-pizza">Chocolate Branco</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
                             </div>
                         </div>
                         <div class="card fadeInUp" id="pizza">
-                            <img src="" alt="" class="card-img-top">
+                            <img src="/img/pizza-romeu-julieta.jpg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Banana com Canela</p>
+                                <p class="card-text" id="nome-pizza">Romeu e Julieta</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
                             </div>
                         </div>
                         <div class="card fadeInUp" id="pizza">
-                            <img src="" alt="" class="card-img-top">
+                            <img src="/img/pizza-banana-chocolate.jpeg" alt="" class="card-img-top">
                             <div class="card-body">
-                                <p class="card-text" id="nome-pizza">Light</p>
+                                <p class="card-text" id="nome-pizza">Banana com Chocolate</p>
                                 <p class="card-text" id="desc-pizza"><p>Lorem ipsum dolor sit amet. In autem tempore ut quam recusandae qui doloribus quam.</p>
                             </div>
                         </div>
@@ -189,12 +198,14 @@
             </div>
         </div>
 
-        <section class="secao sobre-nos">
+        <section class="secao sobre-nos" id="sobre-nos">
             <div class="container-fluid parallax">
                 <div class="row">
                     <div class="col">
                         <h2>SOBRE NÓS</h2>
-                        <p></p>
+                        <p>Você está na ABREU PIZZARIA, o melhor lugar para encontrar pizzas. Você sabia que nós trabalhamos apenas com os fornecedores mais confiáveis do mercado?
+                            Pois é! Isso significa que todos os produtos que você encontrar no nosso site certamente serão da mais alta qualidade. Vá em frente!</p>
+                        <p>Aqui, nós acreditamos em um serviço de atendimento aos clientes de altíssima qualidade – mas também somos da opinião de que todos os nossos clientes merecem vivenciar uma experiência de compra inesquecível, e é por isso que tentamos proporcionar produtos excelentes a um preço acessível.</p>
                     </div>
                 </div>
             </div>
@@ -203,27 +214,21 @@
         <section class="secao localizacao">
             <div class="container-fluid">
                 <div class="row">
-                    <h2>CONHEÇA NOSSOS ESTABELECIMENTOS</h2>
-                    <hr style="width: 35%;">
+                    <h2 id="titulo-localizacao">CONHEÇA NOSSOS ESTABELECIMENTOS</h2>
+                    <hr style="width: 35%; color: gray;">
                 </div>
                 <div class="row">
-                    <div class="col pizzarias">
-                        <h5>Abreu Pizzaria - Santo Amaro</h5>
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.7800705742075!2d-46.72622046991901!3d-23.648046021542637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce510e8d3746ed%3A0x3e9f3a76e1ebfb69!2sEscola%20Senai%20Su%C3%AD%C3%A7o-Brasileira%20Paulo%20Ernesto%20Tolle!5e0!3m2!1spt-BR!2sbr!4v1668795811824!5m2!1spt-BR!2sbr" 
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
+                    <div class="col">
+                        <h5 class="texto-pizzaria">Abreu Pizzaria - Santo Amaro</h5>
+                        <img src="/img/pizzaria1.jpg" alt="" class="img-pizzaria">
                     </div>
-                    <div class="col pizzarias">
-                        <h5>Abreu Pizzaria - Bela Vista</h5>
-                        <div class="map-responsive">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.9142515742324!2d-46.6467665844066!3d-23.571522967854083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59a1807ea08b%3A0xaf86c9cf939be195!2sSenai!5e0!3m2!1spt-BR!2sbr!4v1668797428868!5m2!1spt-BR!2sbr"
-                             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        </div>
+                    <div class="col">
+                        <h5 class="texto-pizzaria">Abreu Pizzaria - Paulista</h5>
+                        <img src="/img/pizzaria2.jpg" alt="" class="img-pizzaria">
                     </div>
                 </div>
+        
+       
             </div>
         </section>
         
@@ -233,17 +238,17 @@
                     <h2>NOSSOS SERVIÇOS</h2>
                 </div>
                 <div class="row">
-                    <div class="col-4 coluna-servico">
+                    <div class="col coluna-servico">
                         <img src="/img/delivery.png" alt="" class="img-servico">
                         <h4>Delivery</h4>
                         <p>Nosso serviço de DELIVERY, funciona durante todo o expediente das pizzarias.<br> Não tenha medo de ligar!</p>
                     </div>
-                    <div class="col-4 coluna-servico">
+                    <div class="col coluna-servico">
                         <img src="/img/reserva.png" alt="" class="img-servico">
                         <h4>Reservas</h4>
                         <p>Tem medo de não conseguir uma mesa na nossa pizzaria?<br> Faça uma reserva antecipadamente e garanta um lugar em nossos estabelecimentos</p>
                     </div>
-                    <div class="col-4 coluna-servico">
+                    <div class="col coluna-servico">
                         <img src="/img/pizza-icon.png" alt="" class="img-servico">
                         <h4>Construa sua Pizza</h4>
                         <p>Cansado dos sabores dos nossos cardápios?<br> Faça você mesmo sua própria pizza!</p>
@@ -252,7 +257,9 @@
             </div>
         </section>
 
-        <div class="container-fluid rodape">
+        <div class="container-fluid separar2"></div>
+
+        <div class="container-fluid rodape" id="rodape">
             <footer class="row">
                 <div class="rodape-div atendimento col">
                     <h4>Horario de atendimento:</h4>
@@ -262,10 +269,18 @@
                 <div class="rodape-div atendimento col">
                     <h4>Redes Sociais e Contatos:</h4>
                     <div>
-                        <img src="/img/facebook.svg" alt="">
-                        <img src="/img/whatsapp.svg" alt="">
-                        <img src="/img/instagram.svg" alt="">
-                        <img src="/img/telephone-fill.svg" alt="">
+                        <a href="instagram.com/abreupizzaria/">
+                            <img src="/img/facebook.png" alt="" class="rede-social">  
+                        </a>
+                        <a href="instagram.com/abreupizzaria/">
+                            <img src="/img/whatsapp.png" alt="" class="rede-social">
+                        </a>
+                        <a href="instagram.com/abreupizzaria/">
+                            <img src="/img/instagram.png" alt="" class="rede-social">
+                        </a>
+                        <a href="instagram.com/abreupizzaria/">
+                            <img src="/img/telephone.png" alt="" class="rede-social">
+                        </a>
                     </div>
                 </div>
             </footer>
